@@ -120,14 +120,14 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-row items-center gap-8">
-          <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/bagasadityap" target="_blank" rel="noopener noreferrer">
             <Github className="w-12 h-12 text-white hover:scale-110 transition-transform" />
           </a>
-          <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/bagasadityapramudia" target="_blank" rel="noopener noreferrer">
             <Linkedin className="w-12 h-12 text-blue-600 hover:scale-110 transition-transform" />
           </a>
 
-          <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/bagasaditya_p_" target="_blank" rel="noopener noreferrer">
             <Instagram className="w-12 h-12 text-pink-500 hover:scale-110 transition-transform" />
           </a>
         </div>
