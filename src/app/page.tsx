@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { useEffect, useState} from "react";
-import { Linkedin, Instagram, Github } from "lucide-react";
+import { Menu, X, Linkedin, Instagram, Github } from "lucide-react";
 import { FaHtml5, FaCss3Alt, FaJs, FaPhp, FaLaravel, FaDatabase, FaBootstrap, FaGitAlt} from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiTypescript, SiUnity} from "react-icons/si";
 
@@ -32,6 +31,7 @@ export default function Home() {
   ];
 
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,35 +56,60 @@ export default function Home() {
     return () => clearInterval(typing);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
-    <div className="bg-slate-900 font-mono grid items-center justify-items-center min-h-screen gap-10 px-5">
-      <header className={`fixed top-0 left-0 w-full flex items-center justify-center py-8 z-50 transition-colors duration-300 ${
-          scrolled ? "bg-slate/800 backdrop-blur-sm shadow text-gray-300" : "bg-transparent" }`}
+    <div className="bg-slate-900 font-mono items-center justify-items-center min-h-screen w-full gap-10 px-5">
+      <header
+      className={`fixed top-0 left-0 w-full flex items-center sm:justify-end md:justify-center px-6 py-6 z-50 transition-colors duration-300 ${
+        scrolled ? "bg-slate-800 backdrop-blur-sm shadow text-gray-300" : "bg-transparent"
+      }`}
+    >
+      <nav className="hidden md:flex gap-10 text-2xl font-semibold">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skill">Skill</a>
+        <a href="#project">Project</a>
+      </nav>
+
+      <button
+        className="md:hidden z-50 text-gray-300"
+        onClick={() => setMenuOpen(!menuOpen)}
       >
-        <nav className="flex gap-20 text-2xl font-bold">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#skill">Skill</a>
-          <a href="#project">Project</a>
+        {menuOpen ? <X size={28} /> : <Menu size={28} />}
+      </button>
+
+      <div
+        className={`md:hidden fixed top-0 right-0 h-full w-2/3 bg-slate-900 text-white p-8 pt-20 transform transition-transform duration-300 ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <nav className="flex flex-col gap-6 text-xl font-semibold">
+          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+          <a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a>
+          <a href="#skill" onClick={() => setMenuOpen(false)}>Skill</a>
+          <a href="#project" onClick={() => setMenuOpen(false)}>Project</a>
         </nav>
-      </header>
+      </div>
+    </header>
       <main className="flex flex-col w-full min-h-screen justify-center items-center px-20">
         <div className="flex flex-row w-full justify-center items-center h-[80vh]">
-          {/* <div className="w-[48%] flex flex-col items-center">
-            <div className="gap-5 flex flex-col items-start">
-              <h1 className="text-5xl font-bold">Bagas Aditya Pramudia</h1>
-              <h1 className="text-3xl font-semibold">Full Stack Developer</h1>
-            </div>
-          </div> */}
-          <div className="w-[75%] flex flex-col items-center">
-            <div className="w-fit min-w-2xl max-w-full bg-gray-800 rounded-xl shadow-lg font-mono text-green-400 overflow-auto">
+          <div className="sm:w-[15%] md:w-[75%] flex flex-col items-center">
+            <div className="md:min-w-2xl max-w-full bg-gray-800 rounded-xl shadow-lg font-mono text-green-400 overflow-auto">
               <div className="bg-gray-700 px-4 py-3 rounded-t-xl relative">
                 <div className="flex space-x-3">
                   <span className="w-4 h-4 bg-red-500 rounded-full"></span>
                   <span className="w-4 h-4 bg-yellow-500 rounded-full"></span>
                   <span className="w-4 h-4 bg-green-500 rounded-full"></span>
                 </div>
-                <span className="absolute left-1/2 transform -translate-x-1/2 -translate-y-6 text-lg text-white">
+                <span className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-6 text-lg text-white">
                   ~/portfolio
                 </span>
               </div>
@@ -192,34 +217,55 @@ export default function Home() {
           <h1 className="text-2xl font-bold">MY PROJECTS EXPERIENCE</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">Sistem Pemesanan Gedung dan Publikasi</h2>
+              <h2 className="text-xl font-semibold mb-2">Sistem Pemesanan Gedung dan Publikasi (2024-2025)</h2>
               <p className="text-gray-400">A website for managing building bookings and event publication for Goes to Campus event, with integrated VR technology for immersive building visualization.</p>
+              <div className="flex items-center my-2">
+                <span className="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Laravel</span>
+                <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">Bootstrap</span>
+              </div>
               <a href="https://sistempemesanangedung.bagasaditya.com" className="text-blue-400">Go to Project</a>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">SILPUSITRON (Sistem Informasi Layanan Publik Terintegrasi Secara Elektronik) </h2>
-              <p className="text-gray-400">The integrated electronic public service system in Blitar City enables residents to submit certificate requests at the sub-district level and supports end-to-end processing up to the final document printing for official signing.</p>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">Web App Stock Control</h2>
-              <p className="text-gray-400">A web application designed to manage and monitor stock levels in a warehouse, ensuring efficient inventory tracking and item availability.</p>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">$PASHER BEARY</h2>
+              <h2 className="text-xl font-semibold mb-2">$PASHER BEARY (2025)</h2>
               <p className="text-gray-400">A dedicated NFT project website for $PASHER BEARY, featuring digital collectibles, project details, and community links.</p>
+              <div className="flex items-center my-2">
+                <span className="bg-gray-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-white">Next.js</span>
+                <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tailwind CSS</span>
+              </div>
               <a href="https://nft.bagasaditya.com" className="text-blue-400">Go to Project</a>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">Web Desa Ngadirejo</h2>
+              <h2 className="text-xl font-semibold mb-2">SILPUSITRON (Sistem Informasi Layanan Publik Terintegrasi Secara Elektronik) (2024)</h2>
+              <p className="text-gray-400">The integrated electronic public service system in Blitar City enables residents to submit certificate requests at the sub-district level and supports end-to-end processing up to the final document printing for official signing.</p>
+              <div className="flex items-center my-2">
+                <span className="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Laravel</span>
+                <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">Bootstrap</span>
+                <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">API</span>
+              </div>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2">Web App Stock Control (2024)</h2>
+              <p className="text-gray-400">A web application designed to manage and monitor stock levels in a warehouse, ensuring efficient inventory tracking and item availability.</p>
+              <div className="flex items-center my-2">
+                <span className="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Laravel</span>
+                <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">Bootstrap</span>
+              </div>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2">Web Desa Ngadirejo (2023)</h2>
               <p className="text-gray-400">An official profile website that provides public service features for residents, such as submitting requests and accessing village information.</p>
+              <div className="flex items-center my-2">
+                <span className="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Laravel</span>
+                <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">Bootstrap</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <footer className="flex items-center justify-center w-full max-w-xl py-6 mt-10 bg-gray-800 rounded-lg shadow-md">
-        <p className="text-gray-400 text-sm">
+      <footer className="flex items-center justify-center w-full max-w-xl mt-10">
+        {/* <p className="text-gray-400 text-sm">
           &copy; {new Date().getFullYear()} Bagas Aditya Pramudia. All rights reserved.
-        </p>
+        </p> */}
       </footer>
     </div>
   );
