@@ -132,7 +132,7 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <section id="about" className="max-w-4xl mb-10">
+      <section id="about" className="max-w-4xl mb-20">
         <div className="flex flex-col items-center gap-5">
           <h1 className="text-2xl font-bold">ABOUT ME</h1>
           <p className="text-lg text-justify">
@@ -157,7 +157,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="skill mb-10">
+      <section id="skill mb-20">
         <div className="flex flex-col items-center gap-5">
           <h1 className="text-2xl font-bold">MY SKILLS</h1>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-white">
