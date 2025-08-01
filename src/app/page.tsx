@@ -140,7 +140,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section id="experience" className="max-w-4xl">
+      <section id="experience" className="max-w-4xl mb-20">
         <div className="flex flex-col items-center gap-5">
           <div className="flex items-center justify-center">
             <h1 className="text-2xl font-bold">MY EXPERIENCE</h1>
@@ -157,7 +157,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="skill mb-20">
+      <section id="skill" className="mb-20">
         <div className="flex flex-col items-center gap-5">
           <h1 className="text-2xl font-bold">MY SKILLS</h1>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-white">
