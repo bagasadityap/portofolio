@@ -4,6 +4,7 @@ import React from "react";
 import { useEffect, useState} from "react";
 import { Menu, X, Linkedin, Instagram, Github } from "lucide-react";
 import { FaHtml5, FaCss3Alt, FaJs, FaPhp, FaLaravel, FaDatabase, FaBootstrap, FaGitAlt} from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import { SiTailwindcss, SiNextdotjs, SiTypescript, SiUnity} from "react-icons/si";
 
 export default function Home() {
@@ -129,6 +130,9 @@ export default function Home() {
 
           <a href="https://instagram.com/bagasaditya_p_" target="_blank" rel="noopener noreferrer">
             <Instagram className="w-12 h-12 text-pink-500 hover:scale-110 transition-transform" />
+          </a>
+          <a href="mailto:bagasadit78@gmail.com" target="_blank" rel="noopener noreferrer">
+            <FiMail className="w-12 h-12 text-pink-500 hover:scale-110 transition-transform" />
           </a>
         </div>
       </main>
