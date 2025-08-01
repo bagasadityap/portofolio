@@ -132,7 +132,7 @@ export default function Home() {
             <Instagram className="w-12 h-12 text-pink-500 hover:scale-110 transition-transform" />
           </a>
           <a href="mailto:bagasadit78@gmail.com" target="_blank" rel="noopener noreferrer">
-            <FiMail className="w-12 h-12 text-pink-500 hover:scale-110 transition-transform" />
+            <FiMail className="w-12 h-12 text-white hover:scale-110 transition-transform" />
           </a>
         </div>
       </main>
