@@ -232,7 +232,7 @@ export default function Home() {
                 <span className="bg-gray-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-white">Next.js</span>
                 <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tailwind CSS</span>
               </div>
-              <a href="https://nft.bagasaditya.com" className="text-blue-400">Go to Project</a>
+              <a href="https://phaserxrp.xyz" className="text-blue-400">Go to Project</a>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg shadow-md">
               <h2 className="text-xl font-semibold mb-2">SILPUSITRON (Sistem Informasi Layanan Publik Terintegrasi Secara Elektronik) (2024)</h2>
