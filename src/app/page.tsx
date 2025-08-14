@@ -140,7 +140,7 @@ export default function Home() {
         <div className="flex flex-col items-center gap-5">
           <h1 className="text-2xl font-bold">ABOUT ME</h1>
           <p className="text-lg text-justify">
-            As a fresh graduate from Brawijaya University with a degree in Information Technology, I have gained hands-on experience in web development through academic projects and internships.I specialize in designing and building websites and web applications, with proficiency in front-end technologies such as HTML, CSS, and JavaScript, as well as back-end development using PHP and Laravel. I also have experience with version control systems like Git and database management using MySQL. Driven by a passion for continuous learning, I actively keep up with the latest trends and innovations in web development. With strong problem-solving and communication skills, I work well in collaborative environments and am committed to delivering effective, user-focused solutions.
+            I am a web developer with 2 years of hands-on experience in developing websites. A graduate of Brawijaya University with a Bachelor’s Degree in Information Technology, I specialize in HTML, CSS, JavaScript, PHP, Laravel, Next.js, Bootstrap, and Tailwind CSS, with solid knowledge of Git and MySQL. Passionate about staying updated with web development trends and committed to continuous learning. Strong in problem-solving and communication, and able to work effectively in teams to deliver high-quality solutions.
           </p>
         </div>
       </section>
@@ -236,7 +236,7 @@ export default function Home() {
                 <span className="bg-gray-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-white">Next.js</span>
                 <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tailwind CSS</span>
               </div>
-              <a href="https://phaserxrp.xyz" className="text-blue-400">Go to Project</a>
+              <a href="https://phaserbeary.xyz" className="text-blue-400">Go to Project</a>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg shadow-md">
               <h2 className="text-xl font-semibold mb-2">SILPUSITRON (Sistem Informasi Layanan Publik Terintegrasi Secara Elektronik) (2024)</h2>
