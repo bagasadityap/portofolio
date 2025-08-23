@@ -221,6 +221,26 @@ export default function Home() {
           <h1 className="text-2xl font-bold">MY PROJECTS EXPERIENCE</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2">PHASER ART GALLERY (2025)</h2>
+              <p className="text-gray-400">Phaser Beary Art Gallery is a dedicated platform we created to showcase and support artists who operate within the XRPL blockchain ecosystem.</p>
+              <div className="flex items-center my-2">
+                <span className="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Laravel</span>
+                <span className="bg-gray-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-white">Next.js</span>
+                <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tailwind CSS</span>
+              </div>
+              <a href="https://artgallery.phaserbeary.xyz" className="text-blue-400">Go to Project</a>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2">PHASHER BEARY (2025)</h2>
+              <p className="text-gray-400">A dedicated NFT project website for $PASHER BEARY, featuring digital collectibles, project details, and community links.</p>
+              <div className="flex items-center my-2">
+                <span className="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Laravel</span>
+                <span className="bg-gray-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-white">Next.js</span>
+                <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tailwind CSS</span>
+              </div>
+              <a href="https://phaserbeary.xyz" className="text-blue-400">Go to Project</a>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
               <h2 className="text-xl font-semibold mb-2">Sistem Pemesanan Gedung dan Publikasi (2024-2025)</h2>
               <p className="text-gray-400">A website for managing building bookings and event publication for Goes to Campus event, with integrated VR technology for immersive building visualization.</p>
               <div className="flex items-center my-2">
@@ -228,15 +248,6 @@ export default function Home() {
                 <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">Bootstrap</span>
               </div>
               <a href="https://sistempemesanangedung.bagasaditya.com" className="text-blue-400">Go to Project</a>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">$PASHER BEARY (2025)</h2>
-              <p className="text-gray-400">A dedicated NFT project website for $PASHER BEARY, featuring digital collectibles, project details, and community links.</p>
-              <div className="flex items-center my-2">
-                <span className="bg-gray-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-white">Next.js</span>
-                <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tailwind CSS</span>
-              </div>
-              <a href="https://phaserbeary.xyz" className="text-blue-400">Go to Project</a>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg shadow-md">
               <h2 className="text-xl font-semibold mb-2">SILPUSITRON (Sistem Informasi Layanan Publik Terintegrasi Secara Elektronik) (2024)</h2>
