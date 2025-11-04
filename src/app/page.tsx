@@ -22,7 +22,7 @@ export default function Home() {
     {
       title: "Web Developer at CV. Technobit Indonesia (Part Time)",
       date: "August 2024 – December 2024",
-      description: "Develop ERP system for company with Laravel.",
+      description: "Develop stock control system for company with Laravel.",
     },
     {
       title: "Graduated from Brawijaya University",
@@ -67,7 +67,7 @@ export default function Home() {
 
 
   return (
-    <div className="bg-slate-900 font-mono items-center justify-items-center min-h-screen w-full gap-10 px-5">
+    <div className="bg-gradient-to-br from-slate-900 via-gray-800 to-gray-950 font-mono items-center justify-items-center min-h-screen w-full gap-10 px-5">
       <header
       className={`fixed top-0 left-0 w-full flex items-center sm:justify-end md:justify-center px-6 py-6 z-50 transition-colors duration-300 ${
         scrolled ? "bg-slate-800 backdrop-blur-sm shadow text-gray-300" : "bg-transparent"
@@ -227,6 +227,7 @@ export default function Home() {
                 <span className="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Laravel</span>
                 <span className="bg-gray-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-white">Next.js</span>
                 <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tailwind CSS</span>
+                <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">API</span>
               </div>
               <a href="https://artgallery.phaserbeary.xyz" className="text-blue-400">Go to Project</a>
             </div>
@@ -237,8 +238,29 @@ export default function Home() {
                 <span className="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Laravel</span>
                 <span className="bg-gray-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-white">Next.js</span>
                 <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tailwind CSS</span>
+                <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">API</span>
               </div>
               <a href="https://phaserbeary.xyz" className="text-blue-400">Go to Project</a>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2">CHORUS PANDA (2025)</h2>
+              <p className="text-gray-400">An interactive NFT platform for $CHORUS PANDA, showcasing exclusive collectibles, real-time updates, and tools for engaging with the growing community.</p>
+              <div className="flex items-center my-2">
+                <span className="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Laravel</span>
+                <span className="bg-gray-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-white">Next.js</span>
+                <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tailwind CSS</span>
+                <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">API</span>
+              </div>
+              <a href="https://choruspanda.com" className="text-blue-400">Go to Project</a>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2">MAGAMERICA (2025)</h2>
+              <p className="text-gray-400">This website provides an overview of the MAGAMERICA NFT project, including its vision, collection overview, and community information.</p>
+              <div className="flex items-center my-2">
+                <span className="bg-gray-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-white">Next.js</span>
+                <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tailwind CSS</span>
+              </div>
+              <a href="https://magamerica.xyz" className="text-blue-400">Go to Project</a>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg shadow-md">
               <h2 className="text-xl font-semibold mb-2">Sistem Pemesanan Gedung dan Publikasi (2024-2025)</h2>
